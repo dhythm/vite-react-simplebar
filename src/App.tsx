@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import { ComponentWithSimpleBar } from "./ComponentWithSimpleBar";
 import reactLogo from "./assets/react.svg";
+import { ComponentWithSimpleBar } from "./ComponentWithSimpleBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +17,13 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <ComponentWithSimpleBar />
+      <ComponentWithSimpleBar>
+        {[...Array(50)].map((x, i) => (
+          <p key={i} className="odd">
+            Some content
+          </p>
+        ))}
+      </ComponentWithSimpleBar>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
