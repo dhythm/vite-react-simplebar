@@ -10,25 +10,11 @@ const Template: ComponentStory<typeof ComponentWithSimpleBar> = () => {
   return (
     <div style={{ height: 150, border: "1px solid" }}>
       <ComponentWithSimpleBar>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
-        <p>Hello, World</p>
+        {[...Array(20)].map((_, i) => (
+          <p key={i} className="odd">
+            Hello, World
+          </p>
+        ))}
       </ComponentWithSimpleBar>
     </div>
   );

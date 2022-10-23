@@ -10,11 +10,6 @@ type Props = {
 export const ComponentWithSimpleBar: FC<Props> = ({ children }) => {
   return (
     <StyledSimpleBar style={{ maxHeight: 150, overflow: "auto" }}>
-      {/* {[...Array(50)].map((x, i) => (
-        <p key={i} className="odd">
-          Some content
-        </p>
-      ))} */}
       {children}
     </StyledSimpleBar>
   );
