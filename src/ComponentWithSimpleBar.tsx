@@ -1,7 +1,5 @@
 import { FC, ReactNode } from "react";
 import SimpleBar from "simplebar-react";
-// import "simplebar";
-// import "simplebar/dist/simplebar.css";
 import "simplebar-react/dist/simplebar.min.css";
 import styled from "styled-components";
 // import "./ComponentWithSimpleBar.css";
